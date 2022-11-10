@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   delete "logout", to: "sessions#destroy"
   
   root to: "main#index"
+  get "FA_Editor", to: "fa#index"
+
 end
