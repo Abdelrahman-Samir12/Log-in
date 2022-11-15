@@ -24,4 +24,6 @@ Rails.application.routes.draw do
   root to: "main#index"
   get "FA_Editor", to: "fa#index"
 
+  get "FAFixer" ,to: "fafixer#index"
+
 end
