@@ -26,4 +26,5 @@ Rails.application.routes.draw do
 
   get "FAFixer" ,to: "fafixer#index"
 
+  get "FAtoRE", to: "fatore#index"
 end
