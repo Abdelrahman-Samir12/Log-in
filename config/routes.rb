@@ -29,5 +29,6 @@ Rails.application.routes.draw do
   get "FAtoRE", to: "fatore#index"
   get "NFAtoDFA", to: "nfatodfa#index"
   get "GrammarEditor" ,to:"grammareditor#index"
+  get "minDFA",to: "mindfa#index"
 
 end
