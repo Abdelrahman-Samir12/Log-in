@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   delete "logout", to: "sessions#destroy"
   
   root to: "main#index"
-  get "FA_Editor", to: "fa#index"
+  get "FA", to: "fa#index"
 
   get "FAFixer" ,to: "fafixer#index"
 
@@ -30,5 +30,9 @@ Rails.application.routes.draw do
   get "NFAtoDFA", to: "nfatodfa#index"
   get "GrammarEditor" ,to:"grammareditor#index"
   get "minDFA",to: "mindfa#index"
+  get "REtoFA",to:"retofa#index"
+  get "PDAEditor",to:"pdaeditor#index"
+  get "rmenu",to:"rmenu#index"
+  get "multiRun",to:"multirun#index"
 
 end
