@@ -17,7 +17,7 @@
     <%=stylesheet_link_tag('css_FA.css')%>
     <%=stylesheet_link_tag('css_tester.css')%>
     
-<%=stylesheet_link_tag('css_multiRun.css')%>
+      <%=stylesheet_link_tag('css_multiRun.css')%>
 
   <%=javascript_include_tag('lib_jquery.min.js')%>
  <%=javascript_include_tag('lib_jquery.migrate.min.js')%>
@@ -226,7 +226,6 @@
     </div>
 
     <!-- Multi Line run Support: adapted from https://codepen.io/johnraiz/pen/jvYRey/-->
-    <div id="multiRun"></div>
 
    <%=javascript_include_tag('lib_jquery.min.js')%>
     <%=javascript_include_tag('lib_jquery.migrate.min.js')%>
@@ -243,15 +242,17 @@
     <%=javascript_include_tag('DataStructures_FLA_serializableGraph.js')%>
     <%=javascript_include_tag('DataStructures_FLA_Commands.js')%>
     <%=javascript_include_tag('DataStructures_FLA_FA.js')%>
-     <%=javascript_include_tag('DataStructures_FLA_REtoFAController.js')%>
-    <%=javascript_include_tag('CustomPrompt.js')%>
+    <%=javascript_include_tag('DataStructures_FLA_REtoFAController.js')%>
     <%=javascript_include_tag('DataStructures_FLA_PDA.js')%>
-    <%=javascript_include_tag('PDAEditor.js')%>
+    
 
 
     
     <!--<script src="./fa/TraverseAccepter.js"></script>
     <script src="./exercises/exerController/ExerciseController.js"></script>-->
+    <%=javascript_include_tag('PDAEditor.js')%>
+        <%=javascript_include_tag('CustomPrompt.js')%>
+
     <script type="text/javascript"></script>
   </div>
 </body>

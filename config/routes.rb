@@ -23,16 +23,15 @@ Rails.application.routes.draw do
   
   root to: "main#index"
   get "FA", to: "fa#index"
-
   get "FAFixer" ,to: "fafixer#index"
-
   get "FAtoRE", to: "fatore#index"
   get "NFAtoDFA", to: "nfatodfa#index"
   get "GrammarEditor" ,to:"grammareditor#index"
   get "minDFA",to: "mindfa#index"
   get "REtoFA",to:"retofa#index"
   get "PDAEditor",to:"pdaeditor#index"
+  get "TMEditor",to:"tmeditor#index"
   get "rmenu",to:"rmenu#index"
   get "multiRun",to:"multirun#index"
-
+  
 end
