@@ -33,5 +33,6 @@ Rails.application.routes.draw do
   get "TMEditor",to:"tmeditor#index"
   get "rmenu",to:"rmenu#index"
   get "multiRun",to:"multirun#index"
+  get "topics", to: "topics#index"
   
 end

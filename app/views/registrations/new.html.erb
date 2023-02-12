@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= stylesheet_link_tag "logs.css" %>
+
+ </head>
+ <body>
+<div class="container">
 <h1>Sign Up</h1>
 
 <%= form_with model: @user, url: sign_up_path, data: { turbo: false } do |form| %>
@@ -9,23 +17,26 @@
     </div>
     <% end %>
     
-    
     <div class="mb-3">
-        <%= form.label :email %>
+        <%= form.label :email, class: "labels" %>
         <%= form.text_field :email, class: "form-control", placeholder: "admin@gmail.com" %>
     </div>
     
     <div class="mb-3">
-        <%= form.label :password %>
+        <%= form.label :password , class: "labels"%>
         <%= form.password_field :password, class: "form-control", placeholder: "password" %>
     </div>  
     
     <div class="mb-3">
-        <%= form.label :password_confirmation %>
+        <%= form.label :password_confirmation ,class: "labels"%>
         <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password" %>
     </div>
 
-    <div class="mb-3">
-        <%= form.submit "Sgin up", class: "btn btn-primary" %>
+    <div class="container-button">
+        <%= form.submit "Sign up", class: "btn" %>
     </div>
 <% end %>
+</div>
+
+</body>
+</html>
