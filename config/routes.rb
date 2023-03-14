@@ -34,5 +34,8 @@ Rails.application.routes.draw do
   get "rmenu",to:"rmenu#index"
   get "multiRun",to:"multirun#index"
   get "topics", to: "topics#index"
+  get "exercises", to: "exercises#index"
+  get "FAExTemplate", to: "fa_ex_template#index"
+  
   
 end
